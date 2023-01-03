@@ -22,9 +22,11 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 requirements = [
-    'Twisted==19.10.0',
+    'Twisted==22.10.0',
     'pyasn1==0.4.5',
-    'cryptography==3.0',
+    'cryptography',
+    'pyopenssl',
+    'service-identity',
     'simplejson==3.16.0',
     'requests==2.21.0',
     'zope.interface==5.0.0',
